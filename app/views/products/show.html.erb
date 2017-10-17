@@ -3,4 +3,4 @@
 <p><%= @product.description %></p>
 <p><%= @product.age %></p>
 <%= image_tag @product.image_url %>
-<%= link_to "Add to cart", product_cart_items_path(@product), action: :create %>
+<%= link_to "Add to cart", product_cart_items_path(@product), action: :create, method: :post %>
