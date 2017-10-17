@@ -1,7 +1,7 @@
 User.destroy_all
 Product.destroy_all
 
-User.create!(email:"bob@gmail.com" password:"123456")
+User.create!(email:"bob@gmail.com", password:"123456")
 
 Product.create!([
                   { name: "Jack Daniels", price: 20, image_url:"http://res.cloudinary.com/dvhogaeis/image/upload/v1508244460/whisky10_zjtvds.jpg", description:"Blended" } ,
