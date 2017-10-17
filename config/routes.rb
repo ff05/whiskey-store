@@ -1,4 +1,16 @@
 Rails.application.routes.draw do
+  get 'order/new'
+
+  get 'order/create'
+
+  get 'order/show'
+
+  get 'order/edit'
+
+  get 'order/update'
+
+  get 'order/destroy'
+
   get 'profiles/show'
 
   get 'profiles/new'
