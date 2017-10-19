@@ -1,5 +1,6 @@
 class ProductsController < ApplicationController
   def index
+    session[:cart] = []
     @products = Product.all
   end
 
