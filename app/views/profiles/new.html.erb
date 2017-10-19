@@ -1,2 +1,17 @@
-<h1>Profiles#new</h1>
-<p>Find me in app/views/profiles/new.html.erb</p>
+<%= form_for @profile do |f| %>
+  <% @profile.errors.full_messages.each do |msg| %>
+    <p class="alert alert-danger"><%= msg %></p>
+  <% end %>
+
+  <%= f.label :name %>
+  <%= f.text_field :name %>
+
+  <%= f.label :address %>
+  <%= f.text_field :address %>
+
+  <%= f.label :city %>
+  <%= f.text_field :city %>
+
+  <%= f.submit "Save", class: "btn btn-default" %>
+  <%= link_to "Back", root_path, class: "btn btn-default" %>
+<%end %>
