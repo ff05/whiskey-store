@@ -1,2 +1,71 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
+
+body {
+  background: url(http://torystattoos.co.za/wp-content/uploads/2015/06/13514043-dark-grey-natural-linen-texture-for-the-background1.jpg);
+  background-size: fixed;
+}
+
+.show-background{
+  height: 100%;
+  width: 100%;
+  background-color:grey;
+}
+
+.fa-shopping-cart {
+  font-size: 40px;
+}
+
+.cart {
+  color: rgb(250,225,65);
+  display: inline-block;
+  position: fixed;
+  right: 80px;
+  top: 80px;
+}
+
+.cart:hover {
+  color: white;
+}
+
+.product-image {
+  margin-top: 100px;
+  margin-left: 30px;
+  height: 400px;
+  border-radius: 10px;
+}
+
+.product-info h1 {
+  font-family: 'Cinzel', serif;
+}
+
+.product-info p {
+  font-family: 'Josefin Slab', serif;
+  font-size: 20px;
+}
+
+.add-cart {
+  font-size: 20px;
+  color: black;
+  text-decoration: none;
+}
+
+.add-cart:hover {
+  text-decoration: none;
+  color: rgb(250,225,65);
+}
+
+.float-left {
+  float: left;
+}
+
+.product-info{
+  margin-top: 100px;
+  margin-left: 30px;
+  border: 2px solid rgb(250,225,65);
+  width: 500px;
+  height: 400px;
+  border-radius: 5px;
+  background-color: rgba(255,255,255,0.8);
+  padding: 30px;
+}
