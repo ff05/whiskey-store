@@ -1,6 +1,5 @@
 class ProductsController < ApplicationController
   def index
-    session[:cart] = []
     @products = Product.search(params[:search])
   end
 

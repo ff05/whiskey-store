@@ -5,7 +5,7 @@ Rails.application.routes.draw do
   resources :profiles
   resources :order
   resources :cart_items
-  resources :products do
-    resources :cart_items
-  end
+  resources :products
+  resources :cart_items
+  resources :carts
 end
