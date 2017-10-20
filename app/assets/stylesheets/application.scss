@@ -100,7 +100,7 @@ body {
   border-radius: 25px;
   outline: none;
   color: #fff;
-  padding: 5px 20px 5px 20px;
+  padding: 5px 60px 5px 20px;
   transition: 1s;
 }
 
@@ -113,4 +113,10 @@ body {
 
 .search_bar::-webkit-input-placeholder {
   color: #fff;
+}
+
+.whiskey_images {
+  width: 250px;
+  height: 250px;
+  border-radius: 10px;
 }
