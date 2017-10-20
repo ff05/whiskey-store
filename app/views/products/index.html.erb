@@ -9,11 +9,13 @@
 
 <h1>Welcome to The Whiskey Wall</h1>
 <% @products.each do |product| %>
-  <%= link_to product do %>
-    <div>
-      <%= image_tag product.image_url %>
-      <%= product.name %>
-    </div>
+<div class="col-md-4">
 
-  <% end %>
+    <%= link_to product do %>
+      <div>
+        <%= image_tag product.image_url, class:"whiskey_images" %>
+        <h2><%= product.name %></h2>
+      </div>
+      <% end %>
+  </div>
 <% end %>
