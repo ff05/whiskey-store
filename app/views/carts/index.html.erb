@@ -1,1 +1,12 @@
-<%= current_cart %>
+
+<% current_cart.each do |hash| %>
+<% hash.each do |key,value| %>
+<p style="color:yellow;"><%= value %></p>
+<% end %>
+<% end %>
+
+<%= link_to do %>
+<div class="btn btn-primary">
+  CHECKOUT
+</div>
+<% end %>

@@ -12,10 +12,9 @@
 
   <body>
     <%= render 'shared/navbar' %>
-<%= current_cart %>
     <p class="notice"><%= notice %></p>
     <p class="alert"><%= alert %></p>
-    <%= link_to  do %>
+    <%= link_to carts_path do %>
     <h3 class="cart">Shopping Cart<i class="fa fa-shopping-cart" aria-hidden="true"></i></h3>
     <% end %>
     <%= yield %>
