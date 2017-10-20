@@ -4,15 +4,20 @@
     <title>WhiskeyStore</title>
     <%= csrf_meta_tags %>
 
+    <link href="https://fonts.googleapis.com/css?family=Cinzel|Great+Vibes|Josefin+Slab|Julius+Sans+One" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <%= stylesheet_link_tag    'application', media: 'all' %>
     <%= javascript_include_tag 'application' %>
   </head>
 
   <body>
     <%= render 'shared/navbar' %>
-    
+
     <p class="notice"><%= notice %></p>
     <p class="alert"><%= alert %></p>
+    <%= link_to  do %>
+    <h3 class="cart">Shopping Cart<i class="fa fa-shopping-cart" aria-hidden="true"></i></h3>
+    <% end %>
     <%= yield %>
   </body>
 </html>
