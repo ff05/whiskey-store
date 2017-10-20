@@ -1,6 +1,6 @@
 class CartsController < ApplicationController
   def index
-    @cart = []
+    @cart = current_cart
   end
 
   def add_to_cart
@@ -20,7 +20,7 @@ class CartsController < ApplicationController
 
   def update
     @product = Product.find(params[:id])
-    current_cart << @product.id
+    current_cart << {name: @product.name, price: @product.price}
 
     session[:cart] = current_cart
   end
