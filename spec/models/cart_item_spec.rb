@@ -1,5 +1,8 @@
 require 'rails_helper'
 
 RSpec.describe CartItem, type: :model do
-  pending "add some examples to (or delete) #{__FILE__}"
+  describe "association with product" do
+    let(:cart_item) { create :cart_item }
+    it {is_expected.to belong_to :product}
+  end
 end
